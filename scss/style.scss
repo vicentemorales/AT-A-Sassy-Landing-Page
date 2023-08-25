@@ -6,12 +6,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 body {
   background-color: $light-color;
   font-family: $font-stack;
   line-height: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 img {
@@ -23,9 +28,80 @@ a {
 
 }
 
+script{
+  display: none;
+}
+
+header{
+  background-color: $primary-color;
+}
 .hero {
   // This is where the bulk of the SCSS styling needs to be done
+  display: center;
+  .nav{
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 13px;
+    background-color: $primary-color;
+  }
+  .banner{
+    width: 48%;
+    color: white;
+  }
 
+  a{
+    color: white;
+  }
+  ul{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  li{
+    width: auto;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5%;
+
+  }
+
+  .hero-content{
+    padding-top: 5px;
+  }
+
+  .home-text{
+    width: 40%;
+    flex-direction: row;
+    align-content: flex-start;
+    padding-top: 15%;
+    color: white;
+
+    h1{
+      font-family: $font-stack;
+      color: white;
+      height: 11%;
+
+      margin-top: 19px;
+    }
+  }
+  img{
+    width: 60%;
+  }
+
+  .btn-primary{
+    width: 45%;
+    display: center;
+    max-height: 30px;
+  }
+  .btn-secondary{
+    width: 38%;
+    display: center;
+    max-height: 30px;
+  }
   // Take a look at the other files we've built already. How can they be useful here?
 
   // Also, take time to review the features of SCSS we've already covered:

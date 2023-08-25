@@ -113,6 +113,7 @@ header {
 }
 .hero img {
   width: 60%;
+  max-height: 99%;
 }
 .hero .btn-primary {
   width: 45%;
@@ -123,6 +124,7 @@ header {
   width: 38%;
   display: center;
   max-height: 30px;
+  color: #000814;
 }
 
 .m-1 {
